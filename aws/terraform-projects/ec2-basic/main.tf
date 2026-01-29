@@ -24,13 +24,4 @@ resource "aws_instance" "cms012" {
 }
 
 
-terraform {
-  backend "s3" {
-    bucket         = "tstatebucket0111"
-    key            = "terraform.tfstate"
-    region         = "ap-southeast-2"
-    use_lockfile   = true
-    encrypt        = true
-  }
-}
 
