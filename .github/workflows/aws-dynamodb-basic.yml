@@ -62,5 +62,3 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_SESSION_TOKEN:     ${{ secrets.AWS_SESSION_TOKEN }}
         run: terraform apply -input=false -auto-approve tfplan
-          echo Add other actions to build,
-          echo test, and deploy your project.
