@@ -1,9 +1,12 @@
 resource "aws_s3_bucket" "demo" {
-  bucket = var.bucket_name
+  bucket = "ChiragShahCICD001"
+  tags = {
+   Description = "CICD Trial"
+        }
 }
 
 resource "aws_s3_bucket" "cms001" {
-  bucket              = "cshahbuck01"
+  bucket              = "cshahbuck0121"
   object_lock_enabled = true
   tags = {
     Name        = "marubucket"
@@ -12,7 +15,7 @@ resource "aws_s3_bucket" "cms001" {
 }
 
 resource "aws_s3_bucket" "tstate_bucket001" {
-  bucket = "tstatebucket01"
+  bucket = "tstatebucket0111"
   tags = {
     Description = "terraform state file backup"
   }
