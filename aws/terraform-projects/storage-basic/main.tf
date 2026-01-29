@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "demo" {
   bucket = "ChiragShahCICD001"
   tags = {
-   Description = "CICD Trial"
-        }
+    Description = "CICD Trial"
+  }
 }
 
 resource "aws_s3_bucket" "cms001" {
