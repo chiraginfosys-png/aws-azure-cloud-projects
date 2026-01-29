@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "demo" {
-  bucket = "ChiragShahCICD001"
+  bucket = "chiragshahcicd0011"
   tags = {
     Description = "CICD Trial"
   }
